@@ -1,8 +1,21 @@
 import styles from "./Button.module.css";
+import search from "../../assets/Search-icon.png";
 
-const Button = ({buttonText, color}) => {
+const Button = ({ buttonText, color, searchIcon = false }) => {
   return (
-    <button className={`${styles.button} ${styles[color]}`}>{buttonText}</button>   )
-}
+    <button className={`${styles.button} ${styles[color]}`}>
+      {
+        searchIcon ? (
+          <div className={styles.iconAndText}>
+            <img src={search} alt="search icon" />
+            <p>{buttonText}</p>
+          </div>
+        ) : (
+          buttonText
+        )
+      }
+    </button>
+  );
+};
 
-export default Button
+export default Button;

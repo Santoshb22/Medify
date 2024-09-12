@@ -10,4 +10,23 @@
     line-height: 21px;
     letter-spacing: 0.02em;
     border: none;
+    cursor: pointer;
+}
+/* 
+.searchLogo {
+    height: 20.8px;
+    width: 20.8px;
+    color: #FFFFFF;
+} */
+
+.iconAndText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.iconAndText img {
+    color: #FFFFFF;
+    filter: brightness(0) invert(1);
 }

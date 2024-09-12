@@ -1,5 +1,5 @@
 // HeroSection.js
-import TagHero from '../../Component/TagHero/TagHero';
+import TagHero from '../TagHero/TagHero';
 import Button from '../../Component/Button/Button';
 import heroImage from '../../assets/hero-image.png';
 import Search from '../../Component/Search/Search';
@@ -26,14 +26,14 @@ const HeroSection = () => {
           <div className={styles.searchLocation}>
             <Search searchText={"State"} />
             <Search searchText={"City"} />
-            <Button buttonText={"Search"} />
+            <Button buttonText={"Search"} searchIcon = {true}/>
           </div>
 
           <div className={styles.healthCenters}>
             <p>You may be looking for</p>
             <div className={styles.services}>
               {
-                serviceCardData.map((card, idx) => <ServiceCard logo={card.logo} text={card.text} key={idx} />)
+                serviceCardData.map((card, idx) => <ServiceCard logo={card.logo} text={card.text} key={idx}  className={"serviceCard"} />)
               }
             </div>
           </div>
