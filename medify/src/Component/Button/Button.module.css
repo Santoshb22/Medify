@@ -1,16 +1,13 @@
-.bgBlue {
-    width: 130px; 
+.button {
+    width: 130px;
     height: 40px;
     border-radius: 8px;
-    background-color: var(--primary-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    background-color: #2AA8FF;
     color: #FFFFFF;
     font-family: Poppins;
     font-size: 14px;
     font-weight: 500;
     line-height: 21px;
     letter-spacing: 0.02em;
+    border: none;
 }

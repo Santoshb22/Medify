@@ -1,13 +1,13 @@
-import HeaderMessage from "../HeaderMessage/HeaderMessage"
-import Navbar from "../Navbar/Navbar"
+import HeaderMessage from "../HeaderMessage/HeaderMessage";
+import Navbar from "../Navbar/Navbar";
 
 const Header = () => {
   return (
     <div>
-        <HeaderMessage/>
-        <Navbar/>
+      <HeaderMessage />
+      <Navbar />
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

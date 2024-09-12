@@ -1,0 +1,33 @@
+.serviceCard {
+    width: 203px;
+    height: 153px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.serviceCard:hover {
+    background: #2AA7FF14;
+    border: 2px solid #2AA7FF;
+    border-radius: 8px;
+}
+
+.serviceCard img {
+    width: 48.75px;
+    height: 52.5px;
+}
+
+.serviceCard p{
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    color: #ABB6C7;
+}
+
+.serviceCard:hover p {
+    color: #2AA7FF;
+    font-weight: 600;
+}
