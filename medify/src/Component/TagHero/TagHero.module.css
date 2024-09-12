@@ -1,0 +1,37 @@
+.tagHero {
+    height: 207px;
+    width: 663px;
+    margin-top: 88px;
+}
+
+.heroParagraph p {
+    font: Poppins;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.02rem;
+    color: #5C6169;
+}
+
+
+
+.mainHeading p{
+    font-family: Poppins;
+    font-size: 31px;
+    font-weight: 500;
+    line-height: 68px;
+    letter-spacing: 0.02em;
+}
+
+.highlightedHeading {
+    font-family: Poppins;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 68px;
+    letter-spacing: 0.02em;
+    color: black;
+}
+
+.centers {
+    color: var(--primary-color);
+}
