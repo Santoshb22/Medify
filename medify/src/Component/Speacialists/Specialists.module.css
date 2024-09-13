@@ -1,0 +1,19 @@
+.specialistsWrapper {
+    height: 819px;
+    width: 100%;
+}
+
+.specialistsCarousel {
+    height: 505px;
+    margin: 80px 0px;
+}
+
+.specialistsHeading {
+    text-align: center;
+    margin: 80px 0px;
+    color: #1B3C74;
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 67px;
+}

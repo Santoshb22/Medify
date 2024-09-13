@@ -3,3 +3,38 @@
     margin: 0px auto;
 }
 
+.grabCarousel {
+    width: 100%;
+}
+
+.doctorsContainer {
+    height: 504px;
+    width: 370px;
+}
+
+.doctorsContainer img {
+    width: 350px;
+    height: 395px;
+}
+
+.drData {
+    height: 75px;
+    width: 370px;
+    text-align: center;
+}
+
+.drName {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 48px;
+    color: #1B3C74;
+}
+
+.drType {
+    font-family: Poppins;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #2AA7FF;
+}

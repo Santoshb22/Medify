@@ -17,6 +17,10 @@ import immune from "../assets/immune-icon.png"
 import drugStore from "../assets/drug-store-icon.png"
 import xRay from "../assets/x-ray-icon.png"
 
+import drAhmadKhan from "../assets/dr-ahmadkhan.png"
+import drHeenaSuchdeva from "../assets/dr-heenaSuchdeva.png"
+import drAnkurSharma from "../assets/dr-ankurSharma.png"
+
 export const serviceCardData = [
   { logo: person, text: "Doctors" },
   { logo: lab, text: "Labs" },
@@ -46,4 +50,31 @@ export const specialisationData = [
   { logo: immune, text: "Piscologist" },
   { logo: drugStore, text: "Laboratory" },
   { logo: xRay, text: "X-Ray" },
+]
+
+export const specialists = [
+  {img: drAhmadKhan,
+    name: "Dr. Ahmad Khan",
+    specialists: "Neurologist"
+  },
+  {img: drHeenaSuchdeva,
+    name: "Dr. Heerna Suchdeva",
+    specialists: "Orthopadics"
+  },
+  {img: drAhmadKhan,
+    name: "Dr. Ankur Sharma",
+    specialists: "Medicine"
+  },
+  {img: drAhmadKhan,
+    name: "Dr. Ahmad Khan",
+    specialists: "Neurologist"
+  },
+  {img: drHeenaSuchdeva,
+    name: "Dr. Heerna Suchdeva",
+    specialists: "Orthopadics"
+  },
+  {img: drAhmadKhan,
+    name: "Dr. Ankur Sharma",
+    specialists: "Medicine"
+  }
 ]
