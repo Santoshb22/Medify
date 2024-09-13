@@ -1,0 +1,42 @@
+.followersCard {
+    width: 252.5px;
+    height: 304px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 15px 45px -5px #00000012;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.followerCardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 252.5px;
+    height: 100px;
+}
+
+.followerCardHeading{
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 48px;
+    color: #1B3C74;
+}
+
+.followersCard img {
+    width: 100px;
+    height: 100px;
+    /* padding: 25px; */
+}
+
+.followerCardContent p {
+    color: #77829D;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+}
