@@ -6,6 +6,7 @@ import ParentCaring from '../../Component/ParentCaring/ParentCaring';
 import Specialists from '../../Component/Speacialists/Specialists';
 import Specialisation from '../../Component/Specialisation/Specialisation';
 import { carouselImage } from '../../Data/data.js';
+
 import styles from './Home.module.css';
 
 const Home = () => {
