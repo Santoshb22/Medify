@@ -1,4 +1,4 @@
-import {specialists } from "../../Data/data"
+import {specialists } from "../../Data/data.js"
 import Carousel from "../Carousel/Carousel"
 import styles from "./Specialists.module.css"
 

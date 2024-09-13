@@ -1,5 +1,5 @@
 import styles from "./Specialisation.module.css"
-import { specialisationData } from "../../Data/data"
+import { specialisationData } from "../../Data/data.js"
 import ServiceCard from "../ServiceCard/ServiceCard"
 import Button from "../Button/Button"
 const Specialisation = () => {
