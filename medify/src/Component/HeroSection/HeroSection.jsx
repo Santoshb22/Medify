@@ -3,7 +3,7 @@ import TagHero from '../TagHero/TagHero';
 import Button from '../../Component/Button/Button';
 import heroImage from '../../assets/hero-image.png';
 import Search from '../../Component/Search/Search';
-import { serviceCardData } from '../../Data/data';
+import { serviceCardData } from '../../data/data';
 import ServiceCard from '../../Component/ServiceCard/ServiceCard';
 import styles from './HeroSection.module.css';
 
