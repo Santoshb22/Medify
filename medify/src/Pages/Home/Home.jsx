@@ -1,5 +1,6 @@
 import Carousel from '../../Component/Carousel/Carousel';
 import HeroSection from '../../Component/HeroSection/HeroSection';
+import ParentCaring from '../../Component/ParentCaring/ParentCaring';
 import Specialists from '../../Component/Speacialists/Specialists';
 import Specialisation from '../../Component/Specialisation/Specialisation';
 import { carouselImage } from '../../Data/data';
@@ -22,6 +23,10 @@ const Home = () => {
 
       <div className={styles.medicalSpecialists}>
         <Specialists/>
+      </div>
+
+      <div className={styles.parentCaringConsultation}>
+        <ParentCaring/>
       </div>
     </div>
   );
