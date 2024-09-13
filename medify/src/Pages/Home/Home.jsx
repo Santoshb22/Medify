@@ -1,5 +1,6 @@
 import Carousel from '../../Component/Carousel/Carousel';
 import HeroSection from '../../Component/HeroSection/HeroSection';
+import News from '../../Component/News/News';
 import ParentCaring from '../../Component/ParentCaring/ParentCaring';
 import Specialists from '../../Component/Speacialists/Specialists';
 import Specialisation from '../../Component/Specialisation/Specialisation';
@@ -27,6 +28,10 @@ const Home = () => {
 
       <div className={styles.parentCaringConsultation}>
         <ParentCaring/>
+      </div>
+
+      <div className={styles.blogsAndNews}>
+        <News/>
       </div>
     </div>
   );
