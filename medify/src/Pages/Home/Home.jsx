@@ -5,11 +5,27 @@ import News from '../../Component/News/News';
 import ParentCaring from '../../Component/ParentCaring/ParentCaring';
 import Specialists from '../../Component/Speacialists/Specialists';
 import Specialisation from '../../Component/Specialisation/Specialisation';
-import { carouselImage } from '../../Data/data.js';
+
+import caruselImg1 from "../../assets/carousel-img1.png"
+import caruselImg2 from "../../assets/carousel-img2.png"
+import caruselImg3 from "../../assets/carousel-img3.png"
+
 
 import styles from './Home.module.css';
 
 const Home = () => {
+
+  const carouselImage = [
+    {img: caruselImg1},
+    {img: caruselImg2},
+    {img: caruselImg3},
+    {img: caruselImg1},
+    {img: caruselImg2},
+    {img: caruselImg3},
+    {img: caruselImg1},
+    {img: caruselImg2},
+    {img: caruselImg3},
+  ]
   return (
     <div className={styles.homeWrapper}>
       <div className={styles.heroSection}>

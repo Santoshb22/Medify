@@ -3,11 +3,24 @@ import TagHero from '../TagHero/TagHero';
 import Button from '../../Component/Button/Button';
 import heroImage from '../../assets/hero-image.png';
 import Search from '../../Component/Search/Search';
-import { serviceCardData } from '../../Data/data';
 import ServiceCard from '../../Component/ServiceCard/ServiceCard';
 import styles from './HeroSection.module.css';
+import lab from "../../assets/lab-icon.png";
+import ambulance from "../../assets/ambulance-icon.png";
+import capsule from "../../assets/capsule-icon.png";
+import hospital from "../../assets/hospital-icon.png";
+import person from "../../assets/person-icon.png";
 
 const HeroSection = () => {
+
+  const serviceCardData = [
+    { logo: person, text: "Doctors" },
+    { logo: lab, text: "Labs" },
+    { logo: hospital, text: "Hospitals" },
+    { logo: capsule, text: "Medical Store" },
+    { logo: ambulance, text: "Ambulance" },
+  ];
+
   return (
     <div className={styles.heroWrapper}>
       <div className={styles.heroContent}>
