@@ -1,0 +1,107 @@
+.downloadAppWrapper {
+    height: 542px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.downloadAppContainer {
+    width: 1162px;
+    height: 566px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.mobileScreen {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+}
+
+.smallScreen {
+    margin-right: -120px;
+    margin-bottom: -40px;
+}
+
+.largeScreen {
+    margin-bottom: -40px;
+}
+
+.mobileBorderSmall {
+  width: 302px;
+  height: 427px;
+  position: relative;
+  z-index: 10;
+}
+
+.displayImgSmall {
+    width: 285px;
+    height: 459px;
+    border-radius: 40px;
+    position: absolute;
+    bottom: -103px;
+    left: 14px;
+    z-index: 10;
+}
+
+.mobileBorderLarge {
+    width: 302px;
+    height: 503px;
+}
+
+.displayImgLarge {
+    width: 286.02px;
+    height: 477.93px;
+    border-radius: 40px;
+    position: absolute;
+    right: 4px;
+    top: 36px;
+}
+
+.downLoadLinks h2 {
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 67px;
+    color: #1B3C74;
+}
+
+
+.downLoadLinks {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.downLoadLinks h2 span {
+    color: skyblue;
+}
+
+.downLoadLinks p {
+    color: #414146;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    
+}
+
+.appDownloadLink {
+    display: flex;
+    gap: 40px;
+}
+
+.appStore, .playStore {
+    width: 224px;
+    height: 69px;
+}
+
+.vectorIcon {
+    margin-top: -95px;
+}

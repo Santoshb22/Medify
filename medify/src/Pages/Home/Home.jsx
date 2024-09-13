@@ -54,7 +54,7 @@ const Home = () => {
 
       <div className={styles.ourFamilies}>
         <HealthFamily/>
-      </div>
+      </div>   
     </div>
   );
 };
