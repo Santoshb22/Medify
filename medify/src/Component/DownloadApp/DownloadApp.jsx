@@ -6,7 +6,7 @@ import largeScreenImg from "../../assets/largeScreen.png"
 import InputNumber from "../InputNumber/InputNumber"
 import playStore from "../../assets/google_play.png"
 import appleStore from "../../assets/apple_store.png"
-import { Button } from "@mui/material"
+import Button from "../Button/Button"
 import arrow from "../../assets/vector.png"
 const DownloadApp = () => {
   return (
@@ -35,13 +35,13 @@ const DownloadApp = () => {
                     <p>Get the link to download the app</p>
 
                     <div className={styles.linkOnSMS}>
-                    <InputNumber/>
-                    <Button buttonText = {"send SMS"}/>
+                    {/* <InputNumber/>  */}
+                    <Button buttonText="send SMS"/>
                     </div>
                     
                     <div className={styles.appDownloadLink}>
-                        <img src={playStore} alt="google play store" />
-                        <img src={appleStore} alt="Apple store" />
+                        <img className={styles.playStore} src={playStore} alt="google play store" />
+                        <img className = {styles.appStore} src={appleStore} alt="Apple store" />
                     </div>
                 </div>    
             </div>

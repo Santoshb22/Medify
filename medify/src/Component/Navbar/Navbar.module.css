@@ -6,26 +6,6 @@
     align-items: center;
 }
 
-.navbarLogo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2px;
-}
-
-.navbarLogo img {
-    height: 23.02px;
-    width: 23px;
-}
-
-.navbarLogo p {
-    color: #2AA8FF;
-    font-family: Poppins;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 27px;
-    letter-spacing: 0.02em;
-}
 
 .navbarContent {
     display: flex;

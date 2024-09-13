@@ -89,7 +89,19 @@
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
-    
+    margin: 10px 0px;
+}
+
+.linkOnSMS {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.linkOnSMS button {
+    height: 50px;
 }
 
 .appDownloadLink {
@@ -100,8 +112,9 @@
 .appStore, .playStore {
     width: 224px;
     height: 69px;
+    cursor: pointer;
 }
 
 .vectorIcon {
-    margin-top: -95px;
+    margin-top: -135px;
 }

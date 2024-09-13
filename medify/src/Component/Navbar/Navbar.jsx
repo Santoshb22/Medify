@@ -1,13 +1,12 @@
 import styles from "./Navbar.module.css"
-import logo from "../../assets/navbar-logo.png"
 import Button from "../Button/Button"
 import { Link } from 'react-router-dom';
+import MedifyLogo from "../MedifyLogo/MedifyLogo";
 const Navbar = () => {
   return (
     <div className={styles.navbar}>
-        <div className={styles.navbarLogo}>
-            <img src={logo} alt="logo" />
-            <p>Medify</p>
+        <div>
+          <MedifyLogo/>
         </div>
 
         <div className={styles.navbarContent}>

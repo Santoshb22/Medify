@@ -12,12 +12,6 @@
     border: none;
     cursor: pointer;
 }
-/* 
-.searchLogo {
-    height: 20.8px;
-    width: 20.8px;
-    color: #FFFFFF;
-} */
 
 .iconAndText {
     display: flex;
