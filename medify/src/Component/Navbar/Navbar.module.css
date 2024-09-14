@@ -19,6 +19,7 @@
 .navbarLink {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 
 .navbarContent  ul{
@@ -36,4 +37,12 @@
     font-weight: 400;
     line-height: 21px;
     color: #102851;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+
+.active {
+    color: #2AA7FF;
+    border-bottom: 4px solid #2AA7FF;
 }

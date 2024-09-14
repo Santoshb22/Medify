@@ -1,6 +1,7 @@
 .searchContainer{
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    padding: 0px 10px;
     align-items: center;
     background-color: #FAFBFE;
     border: 1px solid #F0F0F0;
@@ -27,3 +28,11 @@
     border: none;
 }
 
+/* .stateDropdown {
+    box-shadow: 6px 6px 35px 0px #1028511C;
+    background-color: #FFFFFF;
+    width: 1166px;
+    height: 111px;
+    border-radius: 15px;
+    padding: 27px 24px 27px 24px;
+} */

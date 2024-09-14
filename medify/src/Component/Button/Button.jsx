@@ -1,9 +1,9 @@
 import styles from "./Button.module.css";
 import search from "../../assets/Search-icon.png";
 
-const Button = ({ buttonText, color, searchIcon = false }) => {
+const Button = ({ buttonText, color, searchIcon = false, onClick }) => {
   return (
-    <button className={`${styles.button} ${styles[color]}`}>
+    <button className={`${styles.button} ${styles[color]}`} onClick={onClick}>
       {
         searchIcon ? (
           <div className={styles.iconAndText}>

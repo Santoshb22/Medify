@@ -1,0 +1,28 @@
+.dropdownWrapper {
+    height: 100px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background: linear-gradient(91.75deg, #2AA7FF 1.4%, #0C8CE6 100.57%);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}  
+
+.dropDown {
+    box-shadow: 6px 6px 35px 0px #1028511C;
+    background-color: #FFFFFF;
+    width: 1166px;
+    height: 111px;
+    border-radius: 15px;
+    padding: 27px 24px 27px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -50px;
+}
+
+.dropDown button {
+    width: 231px;
+    height: 50px;
+}
