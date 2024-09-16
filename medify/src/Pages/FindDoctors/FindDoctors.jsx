@@ -9,7 +9,6 @@ import AskedQuestion from "../../Component/AskedQuestion/AskedQuestion";
 const FindDoctors = () => {
   const { hospitals, selectedState, selectedCity } = useLocationContext();
   const totalCenters = hospitals.length;
-  console.log(totalCenters, selectedState);
   const handleBooking = (hospital, slot, date) => {
     if (!slot || !date) {
       alert("Please select a time slot and date before booking!");

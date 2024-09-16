@@ -1,12 +1,16 @@
 import { useState } from "react";
-import { Tabs, Tab, Box, Button, Typography } from "@mui/material";
+import { Tabs, Tab, Box, Button, Typography, IconButton } from "@mui/material";
 import CustomTab from "./CustomTab/CustomTab";
 import styles from "./BookSlot.module.css"; // Make sure to use your existing styles
+import prevChevron from "../../assets/prev-chevron.png"
+import nextChevron from "../../assets/next-chevron.png";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 const BookSlot = ({ onSlotSelect }) => {
   const [selectedTab, setSelectedTab] = useState(0);
   const [selectedTime, setSelectedTime] = useState(null);
   const [selectedDate, setSelectedDate] = useState("Today");
+  const [visibleRange, setVisibleRange] = useState({ start: 0, end: 3 }); // Visible tabs range
 
   const timeSlots = [
     {
@@ -54,11 +58,11 @@ const BookSlot = ({ onSlotSelect }) => {
 
   const handleTimeSelection = (time) => {
     setSelectedTime(time);
-    onSlotSelect(time, selectedDate); 
+    onSlotSelect(time, selectedDate);
   };
 
   const renderSlots = (slotCategory, slots) => (
-    <Box sx={{ display: "flex", justifyContent: "start", alignItems: "center", gap: 2 }}>
+    <Box sx={{ display: "flex", justifyContent: "start", alignItems: "center", gap: 2, }}>
       <Typography variant="h6" className={styles.slotCategory}>
         {slotCategory}
       </Typography>
@@ -68,7 +72,7 @@ const BookSlot = ({ onSlotSelect }) => {
             key={time}
             variant={selectedTime === time ? "contained" : "outlined"}
             onClick={() => handleTimeSelection(time)}
-            sx={{ marginTop: 1 }}
+            sx={{ marginTop: 1, color: "#2AA7FF"}}
           >
             {time}
           </Button>
@@ -81,32 +85,56 @@ const BookSlot = ({ onSlotSelect }) => {
     </Box>
   );
 
+  const handleNext = () => {
+    if (visibleRange.end < timeSlots.length) {
+      setVisibleRange({ start: visibleRange.start + 1, end: visibleRange.end + 1 });
+    }
+  };
+
+  const handlePrev = () => {
+    if (visibleRange.start > 0) {
+      setVisibleRange({ start: visibleRange.start - 1, end: visibleRange.end - 1 });
+    }
+  };
+
   return (
     <div className={styles.bookingSlots}>
-      <Tabs
-        value={selectedTab}
-        onChange={handleTabChange}
-        centered
-        className={styles.tabsContainer}
-        TabIndicatorProps={{
-          style: {
-            backgroundColor: "#00BFA5",
-          },
-        }}
-      >
-        {timeSlots.map((day, index) => (
-          <Tab
-            key={index}
-            label={<CustomTab date={day.date} available={day.available} />}
-            className={styles.tab}
-          />
-        ))}
-      </Tabs>
+      <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+        <IconButton onClick={handlePrev} disabled={visibleRange.start === 0}>
+          <img src={prevChevron} alt="prev btn icon" />
+        </IconButton>
 
-      <Box sx={{ padding: 2 }}>
+        <Tabs
+          value={selectedTab}
+          onChange={handleTabChange}
+          className={styles.tabsContainer}
+        >
+          {timeSlots.slice(visibleRange.start, visibleRange.end).map((day, index) => (
+            <Tab
+              key={index + visibleRange.start} 
+              label={<CustomTab date={day.date} available={day.available} />}
+              className={styles.tab}
+            />
+          ))}
+        </Tabs>
+
+        <IconButton onClick={handleNext} disabled={visibleRange.end >= timeSlots.length}>
+        <img src={nextChevron} alt="next btn icon" />
+        </IconButton>
+      </Box>
+
+      <Box sx={{ padding: 4, }}>
+        <Box className = {styles.slots}>
         {renderSlots("Morning", timeSlots[selectedTab].slots.morning)}
+        </Box>
+
+        <Box className = {styles.slots}>
         {renderSlots("Afternoon", timeSlots[selectedTab].slots.afternoon)}
+        </Box>
+
+        <Box>
         {renderSlots("Evening", timeSlots[selectedTab].slots.evening)}
+        </Box>
       </Box>
     </div>
   );
