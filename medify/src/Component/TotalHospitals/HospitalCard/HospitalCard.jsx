@@ -29,26 +29,26 @@ const HospitalCard = ({ hospital, onBookClick, slotBooking = false, date, time }
           </div>
 
           <div className={styles.hospitalCardContent}>
-            <h4>{hospital["Hospital Name"]}</h4>
+              <h4>{hospital["Hospital Name"]}</h4>
 
-            <div className={styles.aboutHospital}>
-              <p className={styles.cityLocation}>
-                {hospital.City}, {hospital.State}
-              </p>
-              <p className={styles.centerType}>{hospital["Hospital Type"]}</p>
-            </div>
+              <div className={styles.aboutHospital}>
+                <p className={styles.cityLocation}>
+                  {hospital.City}, {hospital.State}
+                </p>
+                <p className={styles.centerType}>{hospital["Hospital Type"]}</p>
+              </div>
 
-            <div className={styles.consultingPrice}>
-              { !date && !time && <p>
-                <span className={styles.freePrice}>FREE</span>{" "}
-                <span className={styles.actualPrice}>$500</span> Consultation fee
-                at clinic
-              </p>}
-            </div>
-
-            <div className={styles.hospitalRating}>
-              <img src={like} alt="like icon" />
-              <p>{hospital["Hospital overall rating"] === "Not Available" ? "N/A" : hospital["Hospital overall rating"]}</p>
+              <div className={styles.consultingPrice}>
+                { !date && !time && <p>
+                  <span className={styles.freePrice}>FREE</span>{" "}
+                  <span className={styles.actualPrice}>$500</span> Consultation fee
+                  at clinic
+                </p>}
+              </div>
+  
+              <div className={styles.hospitalRating}>
+                <img src={like} alt="like icon" />
+                <p>{hospital["Hospital overall rating"] === "Not Available" ? "N/A" : hospital["Hospital overall rating"]}</p>
               </div>
           </div>
         </div>
@@ -68,6 +68,7 @@ const HospitalCard = ({ hospital, onBookClick, slotBooking = false, date, time }
            </div>
           }
         </div>
+
       </div>
 
       {
@@ -80,6 +81,7 @@ const HospitalCard = ({ hospital, onBookClick, slotBooking = false, date, time }
         />
       </div>
       }
+
     </div>
   );
 };

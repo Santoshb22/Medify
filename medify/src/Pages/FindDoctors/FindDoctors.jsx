@@ -24,7 +24,7 @@ const FindDoctors = () => {
       date,
     }
   
-    existingBookings.push(bookingDetails);
+    existingBookings.unshift(bookingDetails);
   
     localStorage.setItem("hospitalBookings", JSON.stringify(existingBookings));
   

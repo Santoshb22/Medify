@@ -2,8 +2,12 @@ import searchIcon from "../../assets/Search-icon.png";
 import styles from "./Search.module.css";
 import location from "../../assets/location-icon.png"
 
-const Search = ({ searchText, data = [], onChange, isDisable = false, value = "", locationIcon = false }) => {
+const Search = ({ searchText, data = [], onChange, isDisable = false, value = "", locationIcon = false, setSearchText, searchValue}) => {
 
+
+  const handleSearch = (e) => {
+    setSearchText(e.target.value)
+  }
   return (
     <div className={styles.searchContainer}>
       {
@@ -26,7 +30,13 @@ const Search = ({ searchText, data = [], onChange, isDisable = false, value = ""
             }
           </select>
         ) : (
-          <input type="text" placeholder={searchText} className={styles.searchInput} />
+          <input 
+          type="text" 
+          placeholder={searchText} 
+          className={styles.searchInput} 
+          onChange={(e) => handleSearch(e)}
+          value = {searchValue}
+          />
         )
       }
     </div>
