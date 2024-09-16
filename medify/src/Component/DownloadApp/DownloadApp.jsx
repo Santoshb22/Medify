@@ -3,11 +3,10 @@ import smallMobileBorder from "../../assets/mobileBorderSmall.png"
 import smallScreenImg from "../../assets/smallScreen.png"
 import largeMobileBorder from "../../assets/mobileBorderlarge.png"
 import largeScreenImg from "../../assets/largeScreen.png"
-import InputNumber from "../InputNumber/InputNumber"
 import playStore from "../../assets/google_play.png"
 import appleStore from "../../assets/apple_store.png"
 import Button from "../Button/Button"
-import arrow from "../../assets/vector.png"
+import arrow from "../../assets/arrow.png"
 const DownloadApp = () => {
   return (
     <div className={styles.downloadAppWrapper}>
@@ -35,7 +34,6 @@ const DownloadApp = () => {
                     <p>Get the link to download the app</p>
 
                     <div className={styles.linkOnSMS}>
-                    {/* <InputNumber/>  */}
                     <Button buttonText="send SMS"/>
                     </div>
                     
