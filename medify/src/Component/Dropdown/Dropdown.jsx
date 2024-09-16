@@ -4,7 +4,7 @@ import Search from "../Search/Search"
 import styles from "./Dropdown.module.css"
 const Dropdown = () => {
 
-  const {states, cities, selectedState, selectedCity, handleStateChange, handleCityChange } = useLocationContext()
+  const {states, cities, selectedState, selectedCity, handleStateChange, handleCityChange, } = useLocationContext()
   return (
     <div className={styles.dropdownWrapper}>
       <div className={styles.dropDown}>
@@ -13,6 +13,7 @@ const Dropdown = () => {
               data={states}
               value={selectedState}
               onChange={(e) => handleStateChange(e.target.value)} 
+              locationIcon
             />
             <Search
               searchText={"City"}
@@ -20,6 +21,7 @@ const Dropdown = () => {
               value={selectedCity}
               onChange={(e) => handleCityChange(e.target.value)} 
               isDisable={selectedState === ""}
+              locationIcon
             />
           <Button 
           buttonText = "Search" 

@@ -81,8 +81,9 @@ const Navbar = () => {
           </NavLink>
         </li>
       </ul>
-
+      <div className={styles.searchBtn}>
       <Button buttonText={"My Bookings"} color={"bgBlue"} onClick={hanldeBooking} />
+      </div>
     </div>
   </div>  );
 }

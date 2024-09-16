@@ -1,3 +1,4 @@
+import AskedQuestion from '../../Component/AskedQuestion/AskedQuestion';
 import Carousel from '../../Component/Carousel/Carousel';
 import HealthFamily from '../../Component/HealthFamily/HealthFamily';
 import HeroSection from '../../Component/HeroSection/HeroSection';
@@ -55,6 +56,10 @@ const Home = () => {
       <div className={styles.ourFamilies}>
         <HealthFamily/>
       </div>   
+
+      <div>
+        <AskedQuestion/>
+      </div>
     </div>
   );
 };

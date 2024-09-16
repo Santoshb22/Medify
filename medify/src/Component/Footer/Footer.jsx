@@ -1,4 +1,3 @@
-import AskedQuestion from "../AskedQuestion/AskedQuestion"
 import DownloadApp from "../DownloadApp/DownloadApp"
 import MedifyLogo from "../MedifyLogo/MedifyLogo"
 import styles from "./Footer.module.css"
@@ -20,10 +19,7 @@ const Footer = () => {
   ]
 
   return (
-    <div className={styles.footerWrapper}>
-      <div className={styles.frequentlyAskedQuestion}>
-        <AskedQuestion/>
-      </div>      
+    <div className={styles.footerWrapper}>  
 
       <div className={styles.downloadAppSection}>
         <DownloadApp/>

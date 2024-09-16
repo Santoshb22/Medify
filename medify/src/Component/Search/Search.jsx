@@ -1,11 +1,16 @@
 import searchIcon from "../../assets/Search-icon.png";
 import styles from "./Search.module.css";
+import location from "../../assets/location-icon.png"
 
-const Search = ({ searchText, data = [], onChange, isDisable = false, value = "" }) => {
+const Search = ({ searchText, data = [], onChange, isDisable = false, value = "", locationIcon = false }) => {
 
   return (
     <div className={styles.searchContainer}>
-      <img src={searchIcon} alt="Search icon" className={styles.searchIcon} />
+      {
+      locationIcon? <img src={location} alt="Search icon" className={styles.searchIcon} /> 
+      : <img src={searchIcon} alt="Search icon" className={styles.searchIcon} />
+      }
+
       {
         searchText === 'City' || searchText === 'State' ? (
           

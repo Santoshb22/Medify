@@ -7,7 +7,7 @@ export const LocationProvider = ({ children }) => {
   const [cities, setCities] = useState([]);
   const [selectedState, setSelectedState] = useState("");
   const [selectedCity, setSelectedCity] = useState("");
-
+  const [hospitals, setHospitals] = useState([]);
   const stateApiKey = "https://meddata-backend.onrender.com/states";
 
   useEffect(() => {
@@ -17,12 +17,12 @@ export const LocationProvider = ({ children }) => {
         const data = await res.json();
         setStates(data);
       } catch (error) {
-        console.log(error);
+        console.log(error)
       }
     };
 
     fetchStates();
-  }, [stateApiKey]);
+  }, [stateApiKey])
 
   const fetchCities = async (state) => {
     try {
@@ -32,23 +32,39 @@ export const LocationProvider = ({ children }) => {
     } catch (error) {
       console.log(error);
     }
-  };
+  }
+
+  const fetchHospitals = async () => {
+    try {
+      const res = await fetch(` https://meddata-backend.onrender.com/data?state=${selectedState}&city=${selectedCity}`)
+      const data = await res.json();
+      setHospitals(data);
+    } catch (error) {
+      console.error(error);
+    }
+  }
 
   const handleStateChange = (state) => {
     setSelectedState(state);
     fetchCities(state);
-  };
+  }
 
   const handleCityChange = (city) => {
     setSelectedCity(city);
-  };
+  }
+
+  useEffect(() => {
+    if(selectedCity && selectedState){
+      fetchHospitals();
+    }
+  }, [selectedCity, selectedState])
 
   return (
-    <LocationContext.Provider value={{ states, cities, selectedState, selectedCity, handleStateChange, handleCityChange }}>
+    <LocationContext.Provider value={{ states, cities, selectedState, selectedCity, handleStateChange, handleCityChange, hospitals, setHospitals }}>
       {children}
     </LocationContext.Provider>
-  );
-};
+  )
+}
 
 
 export const useLocationContext = () => useContext(LocationContext);

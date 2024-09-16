@@ -46,3 +46,8 @@
     color: #2AA7FF;
     border-bottom: 4px solid #2AA7FF;
 }
+
+.searchBtn {
+    position: relative;
+    z-index: 20;
+}

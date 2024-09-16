@@ -1,0 +1,175 @@
+.hospitalCard {
+    height: 269.38px;
+    width: 785.56px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    margin: 20px 0px;
+}
+
+.boxShadow {
+    box-shadow: 6px 6px 35px 0px #1028511C;
+}
+
+.hospitalCardWrapper {
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 6px 6px 35px 0px #1028511C;
+
+}
+
+.hospitalCardLeft {
+    width: 487.55px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hospitalCardImg {
+    height: 140px;
+    width: 140px;
+     background-color: #8CCFFF;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     border-radius: 100%;
+     margin-bottom: 80px;
+
+}
+
+.hospitalCardImg img {
+    width: 80px;
+    height: 80px;
+}
+
+.hospitalCardContent {
+    width: 339px;
+    height: 220.38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 14px;
+}
+
+.hospitalCardContent h4 {
+    color: #14BEF0;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.centerType {
+    color: #414146;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19.6px;
+}
+
+.cityLocation {
+    color: black;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19.6px;
+}
+
+.consultingPrice p {
+    color: #414146;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19.6px;
+}
+
+.freePrice {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19.6px;
+    color: #02A401;
+}
+
+.actualPrice {
+    color: #787887;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19.6px;
+    line-break: normal;
+    text-decoration: line-through;
+}
+
+.hospitalRating {
+    background-color: #00A500;
+    width: 44.08px;
+    height: 22.5px;
+    border-radius: 3.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.hospitalRating img{
+    width: 14px;
+    height: 14px;
+}
+
+
+.hospitalRating p {
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+.hospitalCardContentRIght {
+    width: 236px;
+    height: 220.38px;
+    padding: 137.98px, 16.01px, 0px, 0px;
+}
+
+.bookCenterVisit {
+    width: 220px;
+    height: 82px;
+    padding: 4px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 110px;
+}
+
+.dateTime {
+    margin-bottom: 140px;
+}
+
+.bookCenterVisit p {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.6px;
+    color: #01A400;
+}
+
+.bookCenterVisit button {
+    width: 212px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.bookSlot {
+    width: 745px;
+    height: 278px;
+}

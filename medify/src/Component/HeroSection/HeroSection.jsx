@@ -11,6 +11,7 @@ import capsule from "../../assets/capsule-icon.png";
 import hospital from "../../assets/hospital-icon.png";
 import person from "../../assets/person-icon.png";
 import { useLocationContext } from '../../Context/LocationContext.jsx';
+import { Link } from 'react-router-dom';
 const HeroSection = () => {
   const serviceCardData = [
     { logo: person, text: "Doctors" },
@@ -34,7 +35,7 @@ const HeroSection = () => {
           <div>
             <TagHero />
             <br /><br />
-            <Button buttonText={"Find Centers"} />
+            <Link to = "/find-doctors"><Button buttonText={"Find Centers"} /> </Link>
           </div>
           <div className={styles.heroImage}>
             <img src={heroImage} alt="hero-image" />

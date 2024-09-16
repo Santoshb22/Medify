@@ -1,3 +1,18 @@
 .searchByState {
     margin-bottom: 40px;
 }
+
+.hospitalHeader {
+    margin: 20px 0px;
+}
+
+.hospitalsContent {
+    display: flex;
+    justify-content: center;
+    margin: 80px auto;
+    gap: 20px;
+}
+
+.medicalAdCard {
+    margin-top: 104px;
+}
