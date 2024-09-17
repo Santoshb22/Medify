@@ -4,7 +4,7 @@ import HealthFamily from '../../Component/HealthFamily/HealthFamily';
 import HeroSection from '../../Component/HeroSection/HeroSection';
 import News from '../../Component/News/News';
 import Specialists from '../../Component/Speacialists/Specialists';
-import ParentCaring from '../../Component/PatientCaring/PatientCaring';
+import PatientCaring from '../../Component/PatientCaring/PatientCaring';
 import Specialisation from '../../Component/Specialisation/Specialisation';
 
 import caruselImg1 from "../../assets/carousel-img1.png"
@@ -45,8 +45,8 @@ const Home = () => {
         <Specialists/>
       </div>
 
-      <div className={styles.parentCaringConsultation}>
-        <ParentCaring/>
+      <div className={styles.PatientCaringConsultation}>
+        <PatientCaring/>
       </div>
 
       <div className={styles.blogsAndNews}>

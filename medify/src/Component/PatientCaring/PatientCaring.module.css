@@ -1,4 +1,4 @@
-.parentCaringWrapper {
+.PatientCaringWrapper {
     height: 598px;
     background: linear-gradient(81deg, #E7F0FF 9.01%, rgba(232, 241, 255, 0.47) 89.11%);
     display: flex;
@@ -7,7 +7,7 @@
     justify-content: center;
 }
 
-.parentCaringContent {
+.PatientCaringContent {
     width: 1153px;
     height: 486px;
     display: flex;
@@ -16,18 +16,18 @@
     gap: 60px;
 }
 
-.parentCaringContent img {
+.PatientCaringContent img {
     width: 332px;
     height: 275px;
 }
 
-.parentCaringLeft {
+.PatientCaringLeft {
     height: 486px;
     width: 519px;
     position: relative;
 }
 
-.parentCaringRight {
+.PatientCaringRight {
     height: 375px;
     width: 563px;
     display: flex;
@@ -57,21 +57,21 @@
 
 
 
-.parentCaringRight {
+.PatientCaringRight {
     width: 563px;
     height: 375px;
 }
 
 
 @media (max-width: 1024px) {
-    .parentCaringRight {
+    .PatientCaringRight {
         width:  455px;
     }
 }
 
 
 
-.parentCaringTitle {
+.PatientCaringTitle {
     color: #2AA7FF;
     font-family: Poppins;
     font-size: 16px;
@@ -79,7 +79,7 @@
     line-height: 27px;
 }
 
-.parentCaringHeading {
+.PatientCaringHeading {
     font-family: Poppins;
     font-size: 48px;
     font-weight: 600;
@@ -87,7 +87,7 @@
     color: #1B3C74;
 }
 
-.parentCaringHeading span {
+.PatientCaringHeading span {
     font-family: Poppins;
     font-size: 48px;
     font-weight: 600;
@@ -95,7 +95,7 @@
     color: #2AA7FF;
 }
 
-.parentCaringPara {
+.PatientCaringPara {
     font-family: Inter;
     font-size: 17px;
     font-weight: 500;
@@ -104,7 +104,7 @@
 }
 
 
-.parentCaringGuide {
+.PatientCaringGuide {
     display: flex;
     flex-direction: column;
     align-items: last baseline;
@@ -112,34 +112,34 @@
 }
 
 @media (max-width: 768px) {
-    .parentCaringContent {
+    .PatientCaringContent {
         flex-direction: column;
     }
 
-    .parentCaringContent img {
+    .PatientCaringContent img {
         display: none;
     } 
 
-    .parentCaringContent {
+    .PatientCaringContent {
         width: 768px;
         height: 486px;
     }
     
 
     
-.parentCaringTitle {
+.PatientCaringTitle {
     font-size: 14px;
 }
 
-.parentCaringHeading {
+.PatientCaringHeading {
     font-size: 38px;
 }
 
-.parentCaringHeading span {
+.PatientCaringHeading span {
     font-size: 38px;
 }
 
-.parentCaringPara {
+.PatientCaringPara {
     font-size: 13px;
   
     line-height: 21px;
@@ -157,27 +157,27 @@
 
 @media (max-width: 480px) {
 
-    .parentCaringContent {
+    .PatientCaringContent {
         width: 100%;
         height: 486px;
     }
     
 
     
-.parentCaringTitle {
+.PatientCaringTitle {
     font-size: 14px;
 }
 
-.parentCaringHeading {
+.PatientCaringHeading {
     font-size: 28px;
     line-height: 2px;
 }
 
-.parentCaringHeading span {
+.PatientCaringHeading span {
     font-size: 28px;
 }
 
-.parentCaringPara {
+.PatientCaringPara {
     font-size: 13px;
     line-height: 21px;
 
@@ -189,7 +189,7 @@
 
 
 
-  .parentCaringRight {
+  .PatientCaringRight {
     height: 275px;
     width: 100% !important;
 }
@@ -212,7 +212,7 @@
 
 
 
-.parentCaringRight {
+.PatientCaringRight {
     width: 100%;
     height: 375px;
 }
