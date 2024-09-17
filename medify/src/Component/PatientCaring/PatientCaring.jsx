@@ -1,4 +1,4 @@
-import styles from "./patientCaring.module.css"
+import styles from "./PatientCaring.module.css"
 import PatientCaring1 from "../../assets/PatientCaring1.png"
 import PatientCaring2 from "../../assets/PatientCaring2.png"
 import BookConsultation from "./BookConsultation/BookConsultation"
