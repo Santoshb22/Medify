@@ -16,3 +16,18 @@
     margin-right: 8px;
   }
    
+
+
+  @media (max-width: 480px) {
+    .footerLink {
+       font-size: 10px;
+       font-weight: 400;
+       line-height: 22px;
+     }
+     
+     .footerLink span {
+       font-size: 10px;
+       line-height: 12px;
+    }
+      
+  }

@@ -16,3 +16,11 @@
     line-height: 21px;
     color: #FFFFFF;
 }
+
+@media (max-width: 480px)  {
+
+    .headerMessage .para {
+        font-size: 8px;
+    }
+    
+}  

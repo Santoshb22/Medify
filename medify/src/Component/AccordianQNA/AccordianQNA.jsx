@@ -22,7 +22,8 @@ export default function AccordianQNA({ answer, question, idx }) {
                 fontWeight: 900,
                 fontSize: 18,
               }}
-            />
+              className={styles.accoradianQuestionIcon}
+        />
           }
           aria-controls={`panel${idx}-content`}
           id={`panel${idx}-header`}
@@ -32,6 +33,8 @@ export default function AccordianQNA({ answer, question, idx }) {
               margin: '0', 
             },
           }}
+
+          className={styles.accoradianQuestion}
         >
           <Typography
             sx={{

@@ -5,6 +5,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Box } from "@mui/material";
+import styles from "./NewsCard.module.css"
 
 const NewsCard = () => {
   return (
@@ -13,12 +14,16 @@ const NewsCard = () => {
         height: 477.77,
         width: 363.33,
         borderRadius: 2,
-    }}>
+        
+    }}
+    className = {styles.cardContainer}
+    >
     <Card sx={{ maxWidth: 263, height: 458, padding: 2}} elevation={0}>
       <CardMedia
         sx={{ height: 195, width: "100%", borderRadius: 2 }}
         image={newsImg}
         title="blog card img"
+        className = {styles.cardImg}
       />
       <CardContent sx={{ height: 129, width: "100%" }}>
         <Typography
@@ -30,6 +35,8 @@ const NewsCard = () => {
             color: "#77829D",
           }}
           gutterBottom
+
+          className={styles.date}
         >
           Medical <span style={{ color: "#DDDDDD" }}>|</span> March 31 2022
         </Typography>
@@ -41,6 +48,7 @@ const NewsCard = () => {
             lineHeight: "27px",
             fontFamily: "Poppins",
           }}
+          className={styles.para}
         >
           Lizards are a widespread group of squamate reptiles, with over 6,000
         </Typography>
@@ -59,6 +67,8 @@ const NewsCard = () => {
               lineHeight: "27px",
               fontFamily: "Poppins",
             }}
+
+            className={styles.blogAuthor}
           >
             Rebecca Lee
           </Typography>

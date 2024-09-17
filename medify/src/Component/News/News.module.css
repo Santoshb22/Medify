@@ -49,3 +49,42 @@
     }
 
 }
+
+@media (max-width: 768px) {
+    .newsCardSection {
+        width: 100%;
+    }
+
+    .newsContent {
+        width: 768px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+    .newsCardSection {
+        width: 100%;
+    }
+
+    .newsSectionHeader p{
+        font-size: 12px;
+    }
+
+    .newsSectionHeader h2 {
+        font-size: 18px;
+    }
+
+    .newsContent {
+        width: 100%;
+        height: 450px;
+    }
+
+    .newsCardSection {
+        gap: 2px;
+    }
+
+    .NewsWrapper {
+        height: 590px;
+    }
+}

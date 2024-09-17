@@ -31,3 +31,16 @@
         width: 80%;
     }
 }
+
+@media (max-width: 480px) {
+    
+@media(max-width: 1024px) {
+
+    .medicalAdCard {
+        margin-top: 0px;
+        margin-bottom: 80px;
+        height: 110px;
+        width: 80%;
+    }
+}
+}

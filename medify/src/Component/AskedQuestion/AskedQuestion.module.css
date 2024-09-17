@@ -132,30 +132,42 @@ line-height: 27px;
   
     .askedQContent {
       gap: 20px;
+      width: 768px;
+      flex-direction: column;
     }
   
     
 .menQuestioningImg {
-  width: 400px;
-  height: 379.84px;
+  width: 200px;
+  height: 179.84px;
 }
   
     .heartInHandIcon {
-      width: 60px;
-      height: 60px;
+      width: 40px;
+      height: 40px;
       top: 40%;
-      right: 5%;
+      right: 1%;
     }
   
+    .happyPatients img {
+      height: 32px;
+      width: 32px;
+      margin-right: 10px;
+    }
+
     .happyPatients {
-      width: 180px;
-      height: 80px;
-      top: 70%;
+      width: 110px;
+      height: 40px;
+      top: 60%;
+      left: 0px;
     }
   
     .happyPatients p {
-      font-size: 18px;
+      font-size: 8px;
+      line-height: 10px;
     }
+
+
   }
   
   @media (max-width: 480px) {
@@ -183,11 +195,12 @@ line-height: 27px;
   
     .happyPatients {
       width: 160px;
-      height: 70px;
+      height: 40px;
+      left: -22px;
     }
   
     .happyPatients p {
-      font-size: 16px;
+      font-size: 11px;
     }
   
     .askedQAccordian {

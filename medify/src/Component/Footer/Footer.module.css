@@ -35,27 +35,6 @@
     align-items: start;
   }
 
-
-  @media (max-width: 1024px) {
-
-    .footerTop {
-      flex-direction: column;
-    }
-
-    .medifySocials{
-      flex-direction: row;
-      width: 340px;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .mainFooterWrapper {
-      width: 1024px;
-  }
-  
-    
-}
-
   .socialMedia img {
     width: 35.2px;
     height: 35.2px;
@@ -81,3 +60,93 @@
     display: flex;
     align-items: end;
   }
+
+  @media (max-width: 1024px) {
+
+    .footerTop {
+      flex-direction: column;
+    }
+
+    .medifySocials{
+      flex-direction: row;
+      width: 340px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .mainFooterWrapper {
+      width: 1024px;
+  }
+  
+    
+}
+
+
+
+  @media (max-width: 768px) {
+
+    .medifySocials{
+      flex-direction: row;
+      width: 340px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .mainFooterWrapper {
+      width: 100%;
+  }
+  
+}
+
+
+@media (max-width: 480px) {
+
+  .footerTop {
+    justify-content: space-evenly;
+    margin-left: -30px;
+  }
+
+  .medifySocials{
+    width: 260px;
+    align-items: center !important;
+    height: fit-content;
+  }
+
+.mainFooterWrapper {
+    height: 404px;
+}
+
+.footerContent {
+    width: 100%;
+    height: 354px;
+
+}
+ 
+.footerTop {
+    height: 90%;
+  }
+
+  .socialMedia {
+    position: relative;
+    top: -22px;
+  }
+
+  .socialMedia img {
+    width: 15.2px;
+    height: 15.2px;
+    margin-right: 10px;
+  }
+  
+  .footerLists {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .footerBottom {
+    font-size: 12px;
+    height: 39px;
+
+  }
+}

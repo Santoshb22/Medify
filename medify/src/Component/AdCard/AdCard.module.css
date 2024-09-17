@@ -13,3 +13,12 @@
         box-shadow: 6px 6px 35px 0px #1028511C;
     }
 }
+
+
+@media (max-width: 768px) {
+    .adCard img{
+        width: 263px;
+        height: 168px;
+        border-radius: 15px;
+    }
+}

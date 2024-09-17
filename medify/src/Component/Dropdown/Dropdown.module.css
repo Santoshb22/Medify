@@ -36,3 +36,40 @@
 
     
 }
+
+@media (max-width: 768px) {
+   
+    .dropDown {
+        width: 100%;
+    }
+
+
+    
+.dropDown button {
+    width: 131px;
+    height: 40px;
+}
+    
+}
+
+@media (max-width: 480px) {
+
+    .dropdownWrapper {
+        height: 90px;
+    }  
+    
+    .dropDown {
+        width: 334px;
+        height: 185px;
+        margin-top: 38px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .dropDown button {
+        width: 141px;
+        height: 30px;
+    }
+    
+}

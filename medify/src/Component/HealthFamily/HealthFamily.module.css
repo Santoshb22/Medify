@@ -88,6 +88,7 @@
     .followingCardTop, .followingCardBottom {
         height: 325px;
         width: 565px;
+        gap: 10px;
     }
 
     .followingRight {
@@ -101,5 +102,76 @@
         width: 475px;
         height: 614px;
     }
+    
+}
+
+
+@media(max-width: 768px) {
+    .healthFamilyContent {
+        height: 514px;
+        width: 100%;
+    }
+
+    .followingCardTop, .followingCardBottom {
+        height: 235px;
+        width: 365px;
+    }
+
+
+    .followingRight {
+        width: 90%;
+        height: 414px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+}
+
+
+@media(max-width: 480px) {
+    .healthFamilyContent {
+        height: 514px;
+        width: 100%;
+    }
+
+    .healthFalimyWrapper {
+        height: 650px;
+    }
+    .followingCardTop, .followingCardBottom {
+        height: 155px;
+        width: 265px;
+    }
+
+
+    .followingRight {
+        width: 90%;
+        height: 414px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        margin-left: -131px;
+    }
+
+    
+.followingLeft {
+    width: 100%;
+
+}
+
+.messageToFamily {
+    font-size: 8px;
+
+}
+
+.followingLeft h2 {
+    font-size: 38px;
+
+}
+
+.familyTitle {
+    font-size: 12px;
+}
+
     
 }

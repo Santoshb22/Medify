@@ -97,3 +97,80 @@
     
  
 }
+
+
+
+@media (max-width: 768px) {
+    
+    .heroImage img{
+        height: 335.94px;
+        width: 243px;
+    }
+
+    .bottomHeroSection {
+        width: 665px;
+        margin-top: -9rem;
+        position: relative;
+        z-index: 10;
+        margin-left: -1.8rem;
+    }
+    
+    .heroWrapper {
+        height: 452px;
+        margin-bottom: 300px;
+    }
+    
+    .services {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+    
+    .heroImage img{
+        height: 265.94px;
+        width: 143px;
+    }
+
+    .bottomHeroSection {
+        width: 400px;
+        margin-top: -9rem;
+        position: relative;
+        z-index: 10;
+        margin-left: -1.8rem;
+        height: 350px;
+    }
+
+    .searchLocation {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .searchLocation button{
+        font-size: 9px;
+    }
+
+    .healthCenters {
+        margin-top: 10px;
+    }
+
+
+    .healthCenters p {
+        font-size: 11px;
+    }
+
+    .heroWrapper {
+        height: 452px;
+        margin-bottom: 300px;
+    }
+    
+    .services {
+        width: 100%;
+    }
+
+    .heroWrapper {
+        margin-bottom: 150px;
+    }
+}

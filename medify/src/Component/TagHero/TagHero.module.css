@@ -55,3 +55,50 @@
     }
     
 }
+
+@media (max-width: 768px) {
+    .tagHero {
+        height: 207px;
+        width: 403px;
+        margin-top: 55px;
+    }
+    
+    .heroParagraph p {
+        font-size: 10px;
+    }
+    
+    .mainHeading p {
+        font-size: 11px;
+        line-height: 29px;
+    }
+    
+    .highlightedHeading {
+        font-size: 22px;     
+        line-height: 4px;
+    }
+    
+}
+
+
+@media (max-width: 768px) {
+    .tagHero {
+        height: 207px;
+        width: 213px;
+    }
+    
+    .heroParagraph p {
+        font-size: 10px;
+    } 
+    
+    .mainHeading p {
+        font-size: 11px;
+        line-height: 19px;
+    }
+    
+    .highlightedHeading {
+        font-size: 20px;     
+        line-height: 8px;
+    }
+    
+}
+

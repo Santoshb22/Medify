@@ -19,3 +19,36 @@
     line-height: 27px;
     letter-spacing: 0.02em;
 }
+
+@media (max-width: 768px) {
+    .navbarLogo img {
+        height: 18.02px;
+        width: 18px;
+    }
+    
+    .navbarLogo p {
+        color: #2AA8FF;
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 27px;
+        letter-spacing: 0.02em;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .navbarLogo {
+        position: relative;
+        top: -22px;
+    }
+
+    .navbarLogo img {
+        height: 11.02px;
+        width: 11px;
+    }
+    
+    .navbarLogo p {
+        font-size: 10px;
+    }
+}

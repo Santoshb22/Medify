@@ -57,3 +57,49 @@
     color: #2AA7FF;
     font-weight: 600;
 }
+
+
+
+@media (max-width: 768px) {
+    .card img {
+        width: 28.75px;
+        height: 32.5px;
+    }
+
+    .specialistsCard {
+        width: 140px;
+        height: 111px;
+    }
+
+    .card p {
+        font-size: 12px !important;
+        margin: 10px;
+    }
+    
+
+}
+
+@media (max-width: 480px) {
+    .card img {
+        width: 18.75px;
+        height: 22.5px;
+    }
+
+    .specialistsCard {
+        width: 90px;
+        height: 111px;
+    }
+
+    .card p {
+        font-size: 10px !important;
+        text-align: center;
+        max-width: 70px;
+
+    }
+
+    .card {
+        height: 80px;
+    }
+    
+
+}

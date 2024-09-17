@@ -41,7 +41,7 @@
     width: 545px;
     height: 50px;
     border-radius: 8px;
-    border: 1px 0px 0px 0px;
+    border: 1px;
 }
 
 .dropDown button {
@@ -62,4 +62,101 @@
         height: 270px;
         width: 80%;
     }
+}
+
+@media (max-width: 768px) {
+
+    .dropdownWrapper {
+        height: 80px;
+    }
+    
+.dropdownWrapper h1 {
+    font-size: 20px;
+}
+
+    .hospitalsContent {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 80px;
+        margin-bottom: 0px;
+    }
+    
+    .medicalAdCard {
+        margin-top: 20px;
+    }
+
+    
+    .dropDown {
+        box-shadow: 6px 6px 35px 0px #1028511C;
+        background-color: #FFFFFF;
+        width: 456px;
+        height: 60px;
+        margin-top: 5rem;
+    }
+    
+    .dropDown > div > input[type="text"] {
+        width: 545px;
+        height: 50px;
+        border-radius: 8px;
+        border: 1px;
+    }
+    
+    .dropDown button {
+        width: 131px;
+        height: 40px;
+    }
+    
+}
+
+
+@media (max-width: 480px) {
+
+    .dropdownWrapper {
+        height: 60px;
+    }
+    
+.dropdownWrapper h1 {
+    font-size: 10px;
+    line-height: 12px;
+}
+
+    .hospitalsContent {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 60px;
+        margin-bottom: 0px;
+    }
+    
+    .medicalAdCard {
+        margin-top: 5px;
+    }
+
+    
+    .dropDown {
+        box-shadow: 6px 6px 35px 0px #1028511C;
+        background-color: #FFFFFF;
+        width: 326px;
+        height: 40px;
+        margin-top: 5rem;
+    }
+    
+    .dropDown > div > input[type="text"] {
+        width: 545px;
+        height: 50px;
+        border-radius: 8px;
+        border: 1px;
+    }
+    
+    .dropDown button {
+        width: 111px;
+        height: 30px;
+        font-size: 9px;
+    }
+
+    .hospitalCard {
+        margin-top: -80px;
+    }
+    
 }

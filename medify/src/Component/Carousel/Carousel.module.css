@@ -45,3 +45,17 @@
         height: auto;
     }
 }
+
+
+@media (max-width: 768px) {
+    .carouselData img {
+        width: 220px;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .carouselData img {
+        width: 100px;
+    }
+}

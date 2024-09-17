@@ -187,3 +187,117 @@
     width: 745px;
     height: 278px;
 }
+
+
+@media (max-width: 480px) {
+   .hospitalCardWrapper {
+    width: 100%;
+   }
+  
+  .hospitalCard {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 400px;
+    padding-top: 40px;
+  }
+
+  .hospitalCardLeft {
+    width: 350px;
+    height: 80px;
+}
+
+.hospitalCardImg {
+    height: 110px;
+    width: 160px;
+}
+
+.hospitalCardImg img {
+    width: 60px;
+    height: 60px;
+}
+
+.hospitalCardContent {
+    width: 339px;
+    height: 220.38px;
+    margin-left: 12px;
+    
+}
+ 
+.hospitalCardContent h4 {
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.centerType {
+    font-size: 12px;
+    line-height: 9.6px;
+}
+
+.cityLocation {
+    font-size: 12px;
+    line-height:14.6px;
+}
+
+.consultingPrice p {
+ 
+    font-size: 9px;
+    line-height: 9.6px;
+}
+
+.freePrice {
+    font-size: 9px;
+    line-height: 9.6px;
+}
+
+.actualPrice {
+    font-size: 9px;
+    line-height: 9.6px;
+}
+
+.hospitalRating {
+    width: 34.08px;
+    height: 12.5px;
+    margin-bottom: 30px;
+}
+
+.hospitalRating img{
+    width: 10px;
+    height: 10px;
+}
+
+
+.hospitalRating p {
+    font-size: 9px;
+}
+
+.hospitalCardContentRIght {
+    border: 1px solid black !important;
+    width: 136px;
+    height: 140.38px;
+}
+
+.bookCenterVisit {
+    width: 200px;
+    height: 62px;
+    padding: 4px;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.dateTime {
+    margin-bottom: 10px;
+    width: 220px;
+}
+
+.bookCenterVisit p {
+    font-size: 9px;
+    line-height: 9.6px;
+}
+
+.bookCenterVisit button {
+    width: 202px;
+    height: 30px;
+    border-radius: 4px;
+}
+}

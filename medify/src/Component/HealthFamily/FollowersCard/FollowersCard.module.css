@@ -49,6 +49,28 @@
     }
 }
 
+@media (max-width: 1024px) {
+
+    .followersCard {
+        width: 192.5px;
+        height: 154px;
+    }
+
+    .followerCardHeading {
+        font-size: 20px;
+    }
+
+    .followersCard img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .followerCardContent {
+        justify-content:center;
+    }
+}
+
+
 .followerCardContent p {
     color: #77829D;
     font-family: Poppins;

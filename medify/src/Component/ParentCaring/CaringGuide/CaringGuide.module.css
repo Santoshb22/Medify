@@ -17,3 +17,11 @@
     font-weight: 500;
     line-height: 27px;
 }
+
+@media (max-width: 480px) {
+    .caringGuide p {
+
+        font-size: 14px;
+
+    }
+}

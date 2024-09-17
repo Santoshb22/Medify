@@ -17,6 +17,7 @@
     color: #9CA3AF;
 }
 
+
 .searchInput {
     font-family: Poppins;
     font-size: 14px;
@@ -28,11 +29,26 @@
     border: none;
 }
 
-/* .stateDropdown {
-    box-shadow: 6px 6px 35px 0px #1028511C;
-    background-color: #FFFFFF;
-    width: 1166px;
-    height: 111px;
-    border-radius: 15px;
-    padding: 27px 24px 27px 24px;
-} */
+
+@media (max-width: 768px) {
+    .searchContainer{
+        height: 35px;
+        width: 225px;
+    }
+    
+    .searchIcon {
+        height: 14.2px;
+        width: 14.2px;
+    }
+    
+    .searchInput {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .searchIcon {
+        height: 11px;
+        width: 11px;
+    }
+}

@@ -45,3 +45,45 @@
     }
     
 }
+
+@media (max-width: 768px) {
+
+    .specialisationContent h2 {
+        font-size: 32px;
+    }
+    
+    .specialists {
+        width: 766px;
+        padding-left: 28px;
+    }
+
+    .speacialisationWrapper {
+        min-height: 629px;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+
+    .specialisationContent h2 {
+        font-size: 22px;
+    }
+    
+    .specialists {
+        width: 480px;
+        padding-left: 0px;
+    } 
+
+    .speacialisationWrapper {
+        min-height: 629px;
+    }
+
+    .specialists {
+        grid-template-columns: repeat(2, 80px);
+        gap: 40px;
+        max-width: 100%;
+        justify-content: center;
+        margin: 0px auto;
+    }
+}
