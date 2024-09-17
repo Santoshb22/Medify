@@ -5,6 +5,7 @@ import styles from "./Dropdown.module.css"
 const Dropdown = () => {
 
   const {states, cities, selectedState, selectedCity, handleStateChange, handleCityChange, } = useLocationContext()
+  
   return (
     <div className={styles.dropdownWrapper}>
       <div className={styles.dropDown}>

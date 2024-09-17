@@ -11,7 +11,7 @@ import capsule from "../../assets/capsule-icon.png";
 import hospital from "../../assets/hospital-icon.png";
 import person from "../../assets/person-icon.png";
 import { useLocationContext } from '../../Context/LocationContext.jsx';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate  } from 'react-router-dom';
 const HeroSection = () => {
   const serviceCardData = [
     { logo: person, text: "Doctors" },
@@ -22,11 +22,12 @@ const HeroSection = () => {
   ];
 
   const {selectedCity, selectedState, states, cities, handleCityChange, handleStateChange} = useLocationContext()
-
-  useEffect(() => {
-    console.log('Selected State:', selectedState);
-    console.log('Selected City:', selectedCity);
-  }, [selectedState, selectedCity]);
+const navigate = useNavigate();
+  const handleSeach = () => {
+    if(selectedCity, selectedState) {
+      navigate("find-doctors")
+    }
+  }
 
   return (
     <div className={styles.heroWrapper}>
@@ -62,6 +63,7 @@ const HeroSection = () => {
               buttonText={"Search"}
               searchIcon={true}
               isDisable={selectedState === "" || cities.length === 0}
+              onClick = {handleSeach}
             />
           </div>
 

@@ -10,8 +10,6 @@ const HospitalCard = ({ hospital, onBookClick, slotBooking = false, date, time }
   const [selectedSlot, setSelectedSlot] = useState(null);
   const [selectedDate, setSelectedDate] = useState(null);
 
-  console.log(date, time)
-
   const handleBook = () => {
     if (!selectedSlot || !selectedDate) {
       alert("Please select a time slot and date before booking!");

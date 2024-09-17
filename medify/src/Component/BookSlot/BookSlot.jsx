@@ -1,56 +1,60 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Tabs, Tab, Box, Button, Typography, IconButton } from "@mui/material";
 import CustomTab from "./CustomTab/CustomTab";
 import styles from "./BookSlot.module.css"; 
 import prevChevron from "../../assets/prev-chevron.png"
 import nextChevron from "../../assets/next-chevron.png";
-// import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 const BookSlot = ({ onSlotSelect }) => {
+  const generateDate = () => {
+    const date = [];
+    const today = new Date();
+
+    for(let i = 0; i < 7; i++) {
+      const currDate = new Date(today);
+      currDate.setDate(today.getDate() + i);
+
+      let dateFormatteIs;
+
+      if( i === 0) {
+        dateFormatteIs = "Today";
+      } else if(i ===1){
+        dateFormatteIs = "Tomorrow";
+      } else {
+        dateFormatteIs = currDate.toLocaleDateString("en-US", {
+          weekday: "short",
+          day: "numeric",  
+          month: "short",   
+        })
+      }
+
+      date.push({
+        date: dateFormatteIs,
+        available: Math.floor(Math.random() * 20), 
+        slots: {
+          morning: ["11:00 AM"],
+          afternoon: ["12:00 PM", "1:00 PM","2:30 PM", "3:00 PM", ],
+          evening: ["4:00 PM", "5:00 PM", "6:00 PM"],
+        }
+      })
+    }
+
+    return date;
+  }
+
+
   const [selectedTab, setSelectedTab] = useState(0);
   const [selectedTime, setSelectedTime] = useState(null);
   const [selectedDate, setSelectedDate] = useState("Today");
+  const [timeSlots, setTimeSlots] = useState([])
   const [visibleRange, setVisibleRange] = useState({ start: 0, end: 3 });
 
-  const timeSlots = [
-    {
-      date: "Today",
-      available: 11,
-      slots: {
-        morning: ["11:30 AM"],
-        afternoon: ["12:00 PM", "12:30 PM", "01:30 PM", "02:00 PM",],
-        evening: ["06:00 PM", "06:30 PM", "07:00 PM", "07:30 PM"],
-      },
-    },
-    {
-      date: "Tomorrow",
-      available: 17,
-      slots: {
-        morning: [],
-        afternoon: ["12:00 PM", "12:30 PM", "01:30 PM"],
-        evening: ["06:00 PM", "06:30 PM", "07:00 PM"],
-      },
-    },
-    {
-      date: "Fri, 5 May",
-      available: 18,
-      slots: {
-        morning: ["10:00 AM", "11:00 AM"],
-        afternoon: ["12:00 PM", "01:00 PM", "02:00 PM"],
-        evening: ["05:00 PM", "06:00 PM", "07:00 PM"],
-      },
-    },
-    {
-      date: "Fri, 6 May",
-      available: 18,
-      slots: {
-        morning: ["10:00 AM", "11:00 AM"],
-        afternoon: ["12:00 PM", "01:00 PM", "02:00 PM"],
-        evening: ["05:00 PM", "06:00 PM", "07:00 PM"],
-      },
-    },
-  ];
-
+  useEffect(()=> {
+    const slots = generateDate();
+    setTimeSlots(slots)
+    setSelectedDate(slots[0].date);
+  }, [])
+  
   const handleTabChange = (event, newValue) => {
     setSelectedTab(newValue);
     setSelectedDate(timeSlots[newValue].date);
@@ -62,8 +66,8 @@ const BookSlot = ({ onSlotSelect }) => {
   };
 
   const renderSlots = (slotCategory, slots) => (
-    <Box sx={{ display: "flex", justifyContent: "start", alignItems: "center", gap: 0.4, marginLeft: {xs: "150px"} }}>
-    <Typography variant="h6" sx={{fontSize: {xs: "12px"}, }} className={styles.slotCategory} >
+    <Box sx={{ display: "flex", justifyContent: "start", alignItems: "center", gap: 0.4,}}>
+    <Typography variant="h6"  className={styles.slotCategory} >
       {slotCategory}
     </Typography>
     {slots.length > 0 ? (
@@ -72,7 +76,7 @@ const BookSlot = ({ onSlotSelect }) => {
           key={time}
           variant={selectedTime === time ? "contained" : "outlined"}
           onClick={() => handleTimeSelection(time)}
-          sx={{ marginTop: 1, color: "#2AA7FF", fontSize: { xs: "9px" }, }} 
+          sx={{ marginTop: 1, color: "#2AA7FF",  }} 
         >
           {time}
         </Button>
@@ -96,61 +100,62 @@ const BookSlot = ({ onSlotSelect }) => {
       setVisibleRange({ start: visibleRange.start - 1, end: visibleRange.end - 1 });
     }
   };
+  const currentDay = timeSlots[selectedTab] || { slots: { morning: [], afternoon: [], evening: [] } };
 
   return (
     <div className={styles.bookingSlots}>
-    <Box 
-      sx={{ 
-        display: "flex", 
-        alignItems: "center", 
-        justifyContent: "space-between",
-        width: { xs: "0 121px", }, 
-      }}
-    >
-      <IconButton onClick={handlePrev} disabled={visibleRange.start === 0}>
-        <img src={prevChevron} alt="prev btn icon" />
-      </IconButton>
-
-      <Tabs
-        value={selectedTab}
-        onChange={handleTabChange}
-        className={styles.tabsContainer}
-        sx={{
-          ".MuiTab-root": {
-            width: "auto",
-            fontSize: { xs: "9px",}, 
-          },
+      <Box 
+        sx={{ 
+          display: "flex", 
+          alignItems: "center", 
+          justifyContent: "space-between",
+          
         }}
       >
-        {timeSlots.slice(visibleRange.start, visibleRange.end).map((day, index) => (
-          <Tab
-            key={index + visibleRange.start} 
-            label={<CustomTab date={day.date} available={day.available} />}
-            className={styles.tab}
-          />
-        ))}
-      </Tabs>
+        <IconButton onClick={handlePrev} disabled={visibleRange.start === 0}>
+          <img src={prevChevron} alt="prev btn icon" />
+        </IconButton>
 
-      <IconButton onClick={handleNext} disabled={visibleRange.end >= timeSlots.length}>
-        <img src={nextChevron} alt="next btn icon" />
-      </IconButton>
-    </Box>
+        <Tabs
+          value={selectedTab}
+          onChange={handleTabChange}
+          className={styles.tabsContainer}
+          sx={{
+            ".MuiTab-root": {
+              width: "auto",
+             
+            },
+          }}
+        >
+          {timeSlots.slice(visibleRange.start, visibleRange.end).map((day, index) => (
+            <Tab
+              key={index + visibleRange.start} 
+              label={<CustomTab date={day.date} available={day.available} />}
+              className={styles.tab}
+            />
+          ))}
+        </Tabs>
 
-    <Box sx={{ padding: { xs: 2, md: 4 }, }}> 
-      <Box className={styles.slots}>
-        {renderSlots("Morning", timeSlots[selectedTab].slots.morning)}
+        <IconButton onClick={handleNext} disabled={visibleRange.end >= timeSlots.length}>
+          <img src={nextChevron} alt="next btn icon" />
+        </IconButton>
       </Box>
 
-      <Box className={styles.slots}>
-        {renderSlots("Afternoon", timeSlots[selectedTab].slots.afternoon)}
-      </Box>
+      <Box> 
+        <Box className={styles.slots}>
+          {renderSlots("Morning", currentDay.slots.morning)}
+        </Box>
 
-      <Box className={styles.slots}>
-        {renderSlots("Evening", timeSlots[selectedTab].slots.evening)}
+        <Box className={styles.slots}>
+          {renderSlots("Afternoon", currentDay.slots.afternoon)}
+        </Box>
+
+        <Box className={styles.slots}>
+          {renderSlots("Evening", currentDay.slots.evening)}
+        </Box>
       </Box>
-    </Box>
-  </div>
-    )
-}
+    </div>
+  );
+};
 
 export default BookSlot;
