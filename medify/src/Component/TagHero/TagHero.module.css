@@ -33,3 +33,25 @@
 .centers {
     color: var(--primary-color);
 }
+
+
+@media (max-width: 1024px) {
+    .tagHero {
+        height: 207px;
+        width: 403px;
+        margin-top: 88px;
+    }
+    
+    .heroParagraph p {
+        font-size: 15px;
+    }
+    
+    .mainHeading p {
+        font-size: 21px;
+    }
+    
+    .highlightedHeading {
+        font-size: 36px;     
+    }
+    
+}

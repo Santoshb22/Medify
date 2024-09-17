@@ -63,6 +63,13 @@
 }
 
 
+@media (max-width: 1024px) {
+    .parentCaringRight {
+        width:  455px;
+    }
+}
+
+
 
 .parentCaringTitle {
     color: #2AA7FF;
@@ -95,6 +102,7 @@
     line-height: 29px;
     color: #77829D;
 }
+
 
 .parentCaringGuide {
     display: flex;

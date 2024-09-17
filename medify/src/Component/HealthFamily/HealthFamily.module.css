@@ -6,6 +6,8 @@
     align-items: center;
 }
 
+
+
 .healthFamilyContent {
     height: 714px;
     width: 1185px;
@@ -15,6 +17,7 @@
     align-items: center;
     gap: 45px;
 }
+
 
 .followingLeft {
     width: 575px;
@@ -73,3 +76,30 @@
     height: inherit;
 }
 
+
+@media(max-width: 1024px) {
+    .healthFamilyContent {
+        height: 614px;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .followingCardTop, .followingCardBottom {
+        height: 325px;
+        width: 565px;
+    }
+
+    .followingRight {
+        width: 90%;
+        height: 514px;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .followingLeft {
+        width: 475px;
+        height: 614px;
+    }
+    
+}

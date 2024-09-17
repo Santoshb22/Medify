@@ -8,8 +8,6 @@
 }
 
 .specialistsCard {
-    /* width: Fixed (270px)px;
-    height: Hug (171px)px; */
     width: 270px;
     height: 171px;
     padding: 22px;
@@ -32,6 +30,18 @@
 .card img {
     width: 48.75px;
     height: 52.5px;
+}
+
+@media(max-width: 1024px) {
+    .card img {
+        width: 38.75px;
+        height: 42.5px;
+    }
+
+    .specialistsCard {
+        width: 210px;
+        height: 141px;
+    }
 }
 
 .card p{

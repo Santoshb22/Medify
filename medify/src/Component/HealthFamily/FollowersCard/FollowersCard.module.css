@@ -30,7 +30,23 @@
 .followersCard img {
     width: 100px;
     height: 100px;
-    /* padding: 25px; */
+}
+
+@media (max-width: 1024px) {
+
+    .followersCard {
+        width: 212.5px;
+        height: 154px;
+    }
+
+    .followerCardHeading {
+        font-size: 30px;
+    }
+
+    .followersCard img {
+        width: 40px;
+        height: 40px;
+    }
 }
 
 .followerCardContent p {

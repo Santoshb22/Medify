@@ -22,6 +22,7 @@
     width: 643px;
 }
 
+
 .bottomHeroSection {
     width: 1170px;
     height: 429px;
@@ -33,6 +34,29 @@
     margin-top: -18rem;
     position: relative;
     z-index: 10;
+}
+
+@media (max-width: 1024px) {
+    
+    .heroImage img{
+        height: 535.94px;
+        width: 443px;
+    }
+
+    .bottomHeroSection {
+        width: 870px;
+      
+        margin-top: -9rem;
+        position: relative;
+        z-index: 10;
+    }
+    
+    .heroWrapper {
+        height: 712px;
+        margin-bottom: 250px;
+    }
+    
+
 }
 
 .searchLocation {
@@ -49,6 +73,7 @@
     letter-spacing: 0.02em;
 }
 
+
 .healthCenters {
     display: flex;
     flex-direction: column;
@@ -62,4 +87,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media (max-width: 1024px) {
+    
+    .services {
+        width: 850px;
+    }
+    
+ 
 }

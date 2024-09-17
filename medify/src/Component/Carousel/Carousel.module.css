@@ -13,7 +13,7 @@
 }
 
 .doctorsContainer img {
-    width: 350px;
+    width: 50px;
     height: 395px;
 }
 
@@ -37,4 +37,11 @@
     font-weight: 500;
     line-height: 27px;
     color: #2AA7FF;
+}
+
+@media (max-width: 1024px) {
+    .carouselData img {
+        width: 280px;
+        height: auto;
+    }
 }

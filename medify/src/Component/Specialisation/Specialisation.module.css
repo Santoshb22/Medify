@@ -29,3 +29,19 @@
     gap: 20px;
     width: 1170px;
 }
+
+@media (max-width: 1024px) {
+
+    .specialisationContent h2 {
+        font-size: 38px;
+    }
+    
+    .specialists {
+        width: 926px;
+    }
+
+    .speacialisationWrapper {
+        min-height: 629px;
+    }
+    
+}

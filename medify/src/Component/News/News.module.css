@@ -38,3 +38,14 @@
     justify-content: center;
     gap: 40px;
 }
+
+@media (max-width: 1024px) {
+    .newsCardSection {
+        width: 100%;
+    }
+
+    .newsContent {
+        width: 996px;
+    }
+
+}

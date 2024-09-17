@@ -17,3 +17,10 @@
     font-weight: 600;
     line-height: 67px;
 }
+
+@media (max-width: 1024px) {
+    .specialistsWrapper {
+        display: none;
+    }
+    
+}

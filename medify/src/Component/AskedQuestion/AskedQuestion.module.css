@@ -105,7 +105,13 @@ line-height: 27px;
 }
 
 
-
+@media (max-width: 1024px) {
+  .happyPatients {
+    width: 280px;
+    height: 80px;
+    left: 4%;
+  }
+}
 
 
 @media (max-width: 768px) {
@@ -123,9 +129,11 @@ line-height: 27px;
       gap: 20px;
     }
   
-    .menQuestioningImg {
-      width: 100%;
-    }
+    
+.menQuestioningImg {
+  width: 400px;
+  height: 379.84px;
+}
   
     .heartInHandIcon {
       width: 60px;

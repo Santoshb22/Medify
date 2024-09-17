@@ -14,9 +14,9 @@ const NewsCard = () => {
         width: 363.33,
         borderRadius: 2,
     }}>
-    <Card sx={{ maxWidth: 363, height: 458,}} elevation={0}>
+    <Card sx={{ maxWidth: 263, height: 458, padding: 2}} elevation={0}>
       <CardMedia
-        sx={{ height: 295, width: "100%", borderRadius: 2 }}
+        sx={{ height: 195, width: "100%", borderRadius: 2 }}
         image={newsImg}
         title="blog card img"
       />
@@ -25,7 +25,7 @@ const NewsCard = () => {
           sx={{
             fontFamily: "Poppins",
             fontWeight: 500,
-            fontSize: 16,
+            fontSize: 12,
             lineHeight: "27px",
             color: "#77829D",
           }}
