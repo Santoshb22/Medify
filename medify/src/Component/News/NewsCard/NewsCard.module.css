@@ -1,3 +1,29 @@
+
+@media (max-width: 768px) {
+    .para {
+        font-size: 8px;
+        line-height: 12px;
+    }
+
+    .cardImg {
+        height: 60px;
+    }
+
+    .cardContainer {
+        height: 420px !important;
+        width: 140px;
+    }
+
+    .date {
+        font-size: 6px;
+    }
+
+    .blogAuthor {
+        font-size: 10px;
+        line-height: 12px;
+    }
+}
+
 @media (max-width: 480px) {
     .para {
         font-size: 8px;

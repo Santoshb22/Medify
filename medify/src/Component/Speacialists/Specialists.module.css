@@ -18,9 +18,27 @@
     line-height: 67px;
 }
 
-@media (max-width: 1024px) {
+
+@media (max-width: 768px) {
+    .specialistsHeading {
+        font-size: 28px;
+    }    
+
     .specialistsWrapper {
-        display: none;
+        height: 619px;
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .specialistsHeading {
+        font-size: 18px;
+    }    
+
+    .specialistsWrapper {
+        height: 389px;
+        width: 100%;
     }
     
 }

@@ -63,16 +63,17 @@
 
 
 @media (max-width: 480px) {
+
     .newsCardSection {
         width: 100%;
     }
 
     .newsSectionHeader p{
-        font-size: 12px;
+        font-size: 8px;
     }
 
     .newsSectionHeader h2 {
-        font-size: 18px;
+        font-size: 12px;
     }
 
     .newsContent {
@@ -85,6 +86,6 @@
     }
 
     .NewsWrapper {
-        height: 590px;
+        height: 690px;
     }
 }

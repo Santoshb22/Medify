@@ -1,4 +1,4 @@
-import styles from "./ParentCaring.module.css"
+import styles from "./patientCaring.module.css"
 import parentCaring1 from "../../assets/parentcaring1.png"
 import parentCaring2 from "../../assets/parentcaring2.png"
 import BookConsultation from "./BookConsultation/BookConsultation"
@@ -26,7 +26,7 @@ const ParentCaring = () => {
 
             <div className={styles.parentCaringRight}>
                 <p className={styles.parentCaringTitle}>HELPING PATIENTS FROM AROUND THE GLOBE!!</p>
-                <h2 className={styles.parentCaringHeading}>Parent <span>Caring</span></h2>
+                <h2 className={styles.parentCaringHeading}>Patient <span>Caring</span></h2>
                 <p className={styles.parentCaringPara}>Our goal is to deliver quality of care in a courteous, respectful, and compassionate manner. We hope you will allow us to care for you and strive to be the first and best choice for healthcare.</p>
                 <div className={styles.parentCaringGuide}>
                   <CaringGuide text="Stay Updated About Yout Health"/>

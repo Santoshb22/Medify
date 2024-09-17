@@ -3,8 +3,8 @@ import Carousel from '../../Component/Carousel/Carousel';
 import HealthFamily from '../../Component/HealthFamily/HealthFamily';
 import HeroSection from '../../Component/HeroSection/HeroSection';
 import News from '../../Component/News/News';
-import ParentCaring from '../../Component/ParentCaring/ParentCaring';
 import Specialists from '../../Component/Speacialists/Specialists';
+import ParentCaring from '../../Component/PatientCaring/PatientCaring';
 import Specialisation from '../../Component/Specialisation/Specialisation';
 
 import caruselImg1 from "../../assets/carousel-img1.png"
