@@ -16,3 +16,18 @@
 .medicalAdCard {
     margin-top: 104px;
 }
+
+@media(max-width: 1024px) {
+
+    .hospitalsContent {
+       flex-direction: column-reverse;
+       align-items: center;
+    }
+
+    .medicalAdCard {
+        margin-top: 0px;
+        margin-bottom: 80px;
+        height: 270px;
+        width: 80%;
+    }
+}

@@ -37,9 +37,9 @@ const MyBookings = () => {
 
   return (
     <div className={styles.bookingContainer}>
-       <div className={styles.dropdownWrapper}>
+      <div className={styles.dropdownWrapper}>
         <h1>My Bookings</h1>
-      <div className={styles.dropDown}>
+        <div className={styles.dropDown}>
             <Search
               setSearchText = {setSearchText}
               searchText={"Search by location"}
@@ -50,7 +50,7 @@ const MyBookings = () => {
             searchIcon = {true}
             onClick = {handleSearch}
             />
-      </div>
+         </div>
     </div>
       <div className={styles.hospitalsContent}>
         <div>

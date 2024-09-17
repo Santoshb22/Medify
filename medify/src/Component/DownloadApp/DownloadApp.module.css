@@ -118,3 +118,32 @@
 .vectorIcon {
     margin-top: -135px;
 }
+
+
+@media (max-width: 1024px) {
+    .downloadAppContainer {
+        width: 1024px;
+        gap: 5px;
+    }
+    
+  
+    .downLoadLinks h2 {
+        font-size: 42px;
+    }
+    
+    
+    .downLoadLinks {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .appStore, .playStore {
+        width: 204px;
+        height: 69px;
+        cursor: pointer;
+    }
+    
+}

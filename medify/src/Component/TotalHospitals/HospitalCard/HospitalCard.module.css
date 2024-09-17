@@ -21,7 +21,20 @@
     align-items: center;
     justify-content: space-evenly;
     box-shadow: 6px 6px 35px 0px #1028511C;
+}
 
+@media (max-width: 1024px) {
+    
+.hospitalCardWrapper {
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 6px 6px 35px 0px #1028511C;
+    width: fit-content;
+    margin: 0px auto;
+}
 }
 
 .hospitalCardLeft {

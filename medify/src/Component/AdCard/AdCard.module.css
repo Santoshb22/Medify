@@ -4,3 +4,12 @@
     border-radius: 15px;
     box-shadow: 6px 6px 35px 0px #1028511C;
 }
+
+@media (max-width: 1024px) {
+    .adCard {
+        width: 263px;
+        height: 168px;
+        border-radius: 15px;
+        box-shadow: 6px 6px 35px 0px #1028511C;
+    }
+}

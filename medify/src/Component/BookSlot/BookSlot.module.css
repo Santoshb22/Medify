@@ -10,3 +10,9 @@
     border-bottom: 1px solid #F0F0F5;
     padding-bottom: 10px;
 }
+
+@media (max-width: 1024px) {    
+    .slots {
+        padding-bottom: 8px;
+    }
+}
